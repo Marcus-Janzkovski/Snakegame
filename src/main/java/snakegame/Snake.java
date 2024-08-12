@@ -22,7 +22,7 @@ public class Snake {
 
     public void move (Cell nextCell){
 
-        System.out.println("Snake is moving to" + nextCell.getRow() + " " + nextCell.getCol());
+        System.out.println("Snake is moving to" + " " + nextCell.getRow() + " " + nextCell.getCol());
 
         Cell tail = bodySnake.removeLast();
 
@@ -39,6 +39,7 @@ public class Snake {
         
         for (Cell cell : this.bodySnake){
             if (cell == nextCell){
+                System.out.println("crash");
                 return true;
             }
         }
