@@ -16,6 +16,7 @@ public class Board {
             for (int bar = 0; bar < COL_COUNT; bar++){
 
                 cells[lin][bar] = new Cell(lin,bar);
+                cells[lin][bar].setCelltype(Celltype.EMPTY);
 
             }
 
@@ -45,6 +46,21 @@ public class Board {
 
         System.out.println("Food generated at " + lin + " " + bar);
 
+    }
+
+    public void generateBoardPrint(){
+
+        int lin;
+        int bar;
+
+        for (bar = 0; bar < COL_COUNT; bar++ ){
+            for (lin = 0; lin < ROW_COUNT; lin++){
+                if (cells[lin][bar].getCelltype() == Celltype.EMPTY){ System.out.print("o");}
+                if (cells[lin][bar].getCelltype() == Celltype.FOOD){ System.out.print("X");}
+                if (cells[lin][bar].getCelltype() == Celltype.SNAKE_NODE){ System.out.print("@");}
+            }
+            System.out.println(""); //Pula linha após impressão
+        }
     }
 
     //get e set generico

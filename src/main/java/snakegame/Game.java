@@ -95,6 +95,8 @@ public class Game {
                 newGame.direction = DIRECTION_RIGHT;
             if (newGame.gameOver == true)
                 break;
+                
+            newGame.board.generateBoardPrint();
         }
     }
 
