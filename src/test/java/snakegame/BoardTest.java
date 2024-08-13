@@ -44,7 +44,12 @@ public class BoardTest {
         System.out.println("Generate food testado");
     }  
          
-    
+    @Test
+    public void testPrintBoard() {
+        Board board = new Board(5, 5);
+        String output = "OOOOO\nOOOOO\nOOOOO\nOOOOO\nOOOOO\n";
+        assertEquals(output,board.generateBoardPrint());
+    }
 
 
 

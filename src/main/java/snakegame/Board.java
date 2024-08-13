@@ -48,19 +48,26 @@ public class Board {
 
     }
 
-    public void generateBoardPrint(){
+    public String generateBoardPrint(){
 
         int lin;
         int bar;
 
+        String boardToString = "";
+
+
         for (bar = 0; bar < COL_COUNT; bar++ ){
             for (lin = 0; lin < ROW_COUNT; lin++){
-                if (cells[lin][bar].getCelltype() == Celltype.EMPTY){ System.out.print("o");}
-                if (cells[lin][bar].getCelltype() == Celltype.FOOD){ System.out.print("X");}
-                if (cells[lin][bar].getCelltype() == Celltype.SNAKE_NODE){ System.out.print("@");}
+                if (cells[lin][bar].getCelltype() == Celltype.EMPTY){ System.out.print("O"); boardToString+="O";}
+                if (cells[lin][bar].getCelltype() == Celltype.FOOD){ System.out.print("X"); boardToString+="O";}
+                if (cells[lin][bar].getCelltype() == Celltype.SNAKE_NODE){ System.out.print("@"); boardToString+="@";}
             }
             System.out.println(""); //Pula linha após impressão
+            boardToString+="\n";
         }
+
+        System.out.println(boardToString);
+        return boardToString;
     }
 
     //get e set generico

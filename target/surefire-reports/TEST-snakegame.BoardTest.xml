@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="snakegame.BoardTest" time="0.075" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="snakegame.BoardTest" time="488.785" tests="4" errors="0" skipped="0" failures="1">
   <properties>
-    <property name="jpda.address" value="63150"/>
+    <property name="jpda.address" value="49209"/>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\mvjan\AppData\Local\Temp\surefire12192240614607028643\surefirebooter7795277362082704773.jar C:\Users\mvjan\AppData\Local\Temp\surefire12192240614607028643 2024-08-12T18-36-34_389-jvmRun1 surefire905620373843087287tmp surefire_05481941274962421785tmp"/>
+    <property name="sun.java.command" value="C:\Users\mvjan\AppData\Local\Temp\surefire3401207713713789959\surefirebooter14421905877822356276.jar C:\Users\mvjan\AppData\Local\Temp\surefire3401207713713789959 2024-08-13T00-43-01_906-jvmRun1 surefire15228469142824784095tmp surefire_0422553503332319563tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="snakegame.BoardTest"/>
     <property name="surefire.test.class.path" value="D:\Documentos\Snakegame\Tentativa\target\test-classes;D:\Documentos\Snakegame\Tentativa\target\classes;C:\Users\mvjan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\mvjan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\mvjan\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\mvjan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mvjan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\mvjan\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mvjan\AppData\Local\Temp\surefire12192240614607028643\surefirebooter7795277362082704773.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mvjan\AppData\Local\Temp\surefire3401207713713789959\surefirebooter14421905877822356276.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -61,9 +61,26 @@
     <property name="java.vm.version" value="22.0.1+8-16"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
-    <property name="maven.surefire.debug" value="-agentlib:jdwp=transport=dt_socket,server=n,address=63150"/>
+    <property name="maven.surefire.debug" value="-agentlib:jdwp=transport=dt_socket,server=n,address=49209"/>
   </properties>
-  <testcase name="testGenerateFood" classname="snakegame.BoardTest" time="0.052"/>
+  <testcase name="testGenerateFood" classname="snakegame.BoardTest" time="488.722"/>
   <testcase name="testBoardInitialization0e0" classname="snakegame.BoardTest" time="0.001"/>
+  <testcase name="testPrintBoard" classname="snakegame.BoardTest" time="0.038">
+    <failure message="expected: &lt;OOOOO&#10;OOOOO&#10;OOOOO&#10;OOOOO&#10;OOOOO&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+expected: <OOOOO
+OOOOO
+OOOOO
+OOOOO
+OOOOO> but was: <>
+	at snakegame.BoardTest.testPrintBoard(BoardTest.java:51)
+]]></failure>
+    <system-out><![CDATA[ooooo
+ooooo
+ooooo
+ooooo
+ooooo
+
+]]></system-out>
+  </testcase>
   <testcase name="testBoardInitialization10e20" classname="snakegame.BoardTest" time="0.001"/>
 </testsuite>
