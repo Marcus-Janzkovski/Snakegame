@@ -38,7 +38,8 @@ public class BoardTest {
             }
         }
 
-        assertEquals(havefood, true);
+        assertEquals(havefood,true);
+        
         board.generateBoardPrint();
         System.out.println("Generate food testado");
     }  
