@@ -54,7 +54,7 @@ public class Board {
         int bar;
 
         String boardToString = "";
-
+ 
 
         for (bar = 0; bar < COL_COUNT; bar++ ){
             for (lin = 0; lin < ROW_COUNT; lin++){

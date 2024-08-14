@@ -38,7 +38,7 @@ public class Snake {
         System.out.println("checking crash");
         
         for (Cell cell : this.bodySnake){
-            if (cell == nextCell){
+            if (cell == nextCell){ // Se a proxima celula estiver a lista encadeada, haverá colisão
                 System.out.println("crash");
                 return true;
             }
